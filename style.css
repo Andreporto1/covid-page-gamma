@@ -27,7 +27,7 @@ p{
     font-size: larger;
 }
 
-.logo a:visited{
+.logo a:visited, .logo a:active{
     color: white;
     text-decoration:none;
 }
