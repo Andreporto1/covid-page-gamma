@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.header, body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #53535725 ;
+}
+
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+p{
+    cursor: pointer;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+    font-size: larger;
+}
+
+.logo a:visited{
+    color: white;
+    text-decoration:none;
+}
+
+.a-sobre:active,.a-sobre:visited{
+    color: rgba(189, 45, 45, 0.801);
+}
+
+.header{
+    background: #0082e6f1;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17x;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: 0.5s;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }  
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    } 
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        }
+        a:hover,a.active{
+            background: none;
+            color: #0082e6;
+        }
+    #check:checked ~ ul{
+    left: 0;
+    }
+}
+/* ====Cards==== */
+.card{
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.6);
+    background: #fff;
+    text-align: left;
+    float: left;
+    margin: 10px;
+}
+
+.container-card{
+    padding: 2px 10px;
+    text-align: left;
+    word-break: break-word;
+}
+
+.container-card-audio{
+    padding: 7px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.img-noticias{
+    border-radius: 4px 4px 0px 0px;
+    width: 320px;
+    height: 200px;
+
+}
+
+
+
+/* ====SOBRE==== */
+.sobre-texto{
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    text-align: center;  
+        
+}
+
+.foto{
+    text-align: center;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.nome{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+.sobre{
+    text-align: justify;
+    width: 70%;
+    max-width: 700px;
+    min-width: 400px;
+    margin: 32px auto;
+    font-size: 18px;
+    line-height: 34px;
+    
+}
+
+
+/* ====Sobre==== */
+.fontes{
+    background-color: #5ba0e6;
+    padding: 1em;
+    margin: 1em 15em;
+
+}
+
+h1{
+    text-align: center;
+    margin: 2em;
+    font-size: 2em;
+}
+
+.fontes p{
+    text-align: center;
+}
+
+.container-fontes{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
