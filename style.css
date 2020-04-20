@@ -224,4 +224,11 @@ h1{
 
 }
 
+.sobre img{
+    height: 1em;
+    width: 1em;
+    align-items: center;
+}
+
+
 
